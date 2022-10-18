@@ -17,3 +17,12 @@ if __name__ == "__main__":
     # When deploying to Cloud Run, a production-grade WSGI HTTP server,
     # such as Gunicorn, will serve the app.
     app.run(host="localhost", port=8080, debug=True)
+
+requirements.txt:
+
+Flask==2.2.2
+gunicorn==20.1.0
+
+Procfile:
+
+web: gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
