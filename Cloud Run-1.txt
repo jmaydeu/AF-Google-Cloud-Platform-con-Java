@@ -39,6 +39,8 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
+REGION="europe-west4"
+
 gcloud run deploy helloworld-python \
   --source . \
   --platform managed \
