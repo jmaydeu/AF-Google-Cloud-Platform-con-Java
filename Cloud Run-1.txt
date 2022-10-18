@@ -26,3 +26,16 @@ gunicorn==20.1.0
 Procfile:
 
 web: gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 main:app
+
+# Crear entorno virtual
+
+virtualenv venv
+
+# Activar entorno virtual 
+
+source venv/bin/activate
+
+# Instalar dependencias
+
+pip install -r requirements.txt
+
