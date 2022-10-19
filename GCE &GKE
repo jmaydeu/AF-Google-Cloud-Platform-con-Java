@@ -9,3 +9,5 @@ gcloud artifacts repositories create nombre \ --repository-format=docker \ --loc
 
 git clone https://github.com/GoogleCloudPlatform/kubernetes-engine-samples
 cd kubernetes-engine-samples/hello-app
+
+docker build -t REGION-docker.pkg.dev/bbva-it-octubre/hello-repo/hello-app:v1 .
