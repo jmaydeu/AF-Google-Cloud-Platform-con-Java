@@ -16,7 +16,7 @@ docker build -t us-west1-docker.pkg.dev/bbva-it-octubre/nombre/nombreapp:v1 .
 
 #configuar la cli para que se autentique con artifacts
 
-gcloud authconfigure-docker us-west1-docker.pkg.dev
+gcloud auth configure-docker us-west1-docker.pkg.dev
 
 #enviar la imagen de docker al repositorio
 
