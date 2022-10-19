@@ -1,0 +1,8 @@
+sudo su - 
+apt update
+apt install -y nginx
+service nginx start
+exit
+
+## crear repositorio artifacts 
+gcloud artifacts repositories create nombre \ --repository-format=docker \ --location=us-west1\

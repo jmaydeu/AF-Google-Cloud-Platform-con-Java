@@ -1,5 +1,0 @@
-sudo su - 
-apt update
-apt install -y nginx
-service nginx start
-exit
