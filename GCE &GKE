@@ -6,3 +6,6 @@ exit
 
 ## crear repositorio artifacts 
 gcloud artifacts repositories create nombre \ --repository-format=docker \ --location=us-west1\
+
+git clone https://github.com/GoogleCloudPlatform/kubernetes-engine-samples
+cd kubernetes-engine-samples/hello-app
