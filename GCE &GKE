@@ -12,7 +12,7 @@ cd kubernetes-engine-samples/hello-app
 
 #compilar la imagen de la aplicacion
 
-docker build -t REGION-docker.pkg.dev/bbva-it-octubre/hello-repo/hello-app:v1 .
+docker build -t us-west1-docker.pkg.dev/bbva-it-octubre/nombre/nombreapp:v1 .
 
 #configuar la cli para que se autentique con artifacts
 
@@ -20,4 +20,4 @@ gcloud authconfigure-docker us-west1-docker.pkg.dev
 
 #enviar la imagen de docker al repositorio
 
-docker push REGION-docker.pkg.dev/bbva-it-octubre/hello-repo/hello-app:v1
+docker push us-west1-docker.pkg.dev/bbva-it-octubre/nombre/nombreapp:v1
