@@ -13,6 +13,12 @@ gcloud app create
 ##editar archivo 
 nano pom.xml
 
+ ## ruta
+ java-docs-samples/appengine-java8/helloworld/src/main/webapp/WEB-INF/appengine-web.xml 
+
+## agregar al appengine-web.xml
+  <service>jorge</service>
+
 ##deploy app
 mvn package appengine:deploy
 
@@ -20,5 +26,3 @@ mvn package appengine:deploy
 gcloup app browse
 
 
- ## ruta
- java-docs-samples/appengine-java8/helloworld/src/main/webapp/WEB-INF/appengine-web.xml 
