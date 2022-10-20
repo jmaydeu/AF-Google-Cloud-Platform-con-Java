@@ -25,4 +25,6 @@ mvn package appengine:deploy
 ##ver app 
 gcloup app browse
 
+## establecer conexion con la base de datos desde gcloud
 
+gcloud sql connect nombrebasedatos --user=usuario
