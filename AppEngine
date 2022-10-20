@@ -9,3 +9,12 @@ cd java-docs-samples/appengine-java8/helloworld
 ## crear la aplicación de App Engine
 
 gcloud app create
+
+##editar archivo 
+nano pom.xml
+
+##deploy app
+mvn package appengine:deploy
+
+##ver app 
+gcloup app browse
