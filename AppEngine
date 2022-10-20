@@ -1,3 +1,11 @@
 ## clonar repositorio
 
 git clone https://github.com/GoogleCloudPlatform/java-docs-samples.git
+
+## ir a la carpeta 
+
+cd java-docs-samples/appengine-java8/helloworld
+
+## crear la aplicación de App Engine
+
+gcloud app create
