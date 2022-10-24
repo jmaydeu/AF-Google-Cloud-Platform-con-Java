@@ -5,3 +5,17 @@ gcloud beta dataflow jobs run import-bus-data-$(date +%s) \
 --gcs-location gs://dataflow-templates/latest/GCS_SequenceFile_to_Cloud_Bigtable \
 --num-workers=$NUM_WORKERS --max-workers=$NUM_WORKERS \
 --parameters bigtableProject=$GOOGLE_CLOUD_PROJECT,bigtableInstanceId=$INSTANCE_ID,bigtableTableId=$TABLE_ID,sourcePattern=gs://cloud-bigtable-public-datasets/bus-data/*
+
+-- aplicacion java 
+
+git clone https://github.com/googlecodelabs/cbt-intro-java.git
+cd cbt-intro-java
+
+-- consulta ejemplo big query
+
+SELECT
+  venue_name, venue_capacity, venue_city, venue_state
+FROM `bigquery-public-data.ncaa_basketball.mbb_teams_games_sr`
+GROUP BY 1,2,3,4
+ORDER BY venue_capacity DESC
+LIMIT 5;
