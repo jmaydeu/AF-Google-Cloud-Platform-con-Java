@@ -18,6 +18,9 @@ python batch_import.py my-first-instance my-sample-db
 
 -----------------------------------------
 TAREA 2: CREAR UNA TABLA DE CLASIFICACIÓN DE VIDEOJUEGOS
+# cloud spanner con java docu oficial
+
+https://cloud.google.com/spanner/docs/getting-started/java?hl=es
 
 # crear instancia de spanner
 
