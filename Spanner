@@ -247,4 +247,6 @@ public class App {
 
 mvn package
 
+java -jar target/leaderboard.jar
+
 java -jar target/leaderboard.jar create cloudspanner-leaderboard leaderboard
