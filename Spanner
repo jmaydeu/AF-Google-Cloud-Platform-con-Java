@@ -1,0 +1,16 @@
+-- TAREA 1
+
+#clonar repositorio
+
+git clone https://github.com/cloudspannerecosystem/sampledb.git
+cd sampledb
+
+# instalar dependencias
+
+virtualenv env
+source env/bin/activate
+pip install -r requirements.txt
+
+# ejecutamos .py carga los datos 
+
+python batch_import.py my-first-instance my-sample-db
