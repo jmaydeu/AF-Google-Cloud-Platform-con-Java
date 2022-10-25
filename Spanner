@@ -27,3 +27,7 @@ gcloud spanner instances create jorgespanner --config=regional-us-east1 --descri
 
 git clone https://github.com/GoogleCloudPlatform/java-docs-samples.git
 cd java-docs-samples/spanner/leaderboard
+
+## crear aplicacion basica de java con maven 
+
+mvn -B archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DgroupId=com.google.codelabs -DartifactId=leaderboard -DarchetypeVersion=1.4
