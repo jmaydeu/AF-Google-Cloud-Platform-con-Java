@@ -242,3 +242,9 @@ public class App {
     System.out.println("Closed client");
   }
 }
+
+## compilar y ejecutar aplicacion
+
+mvn package
+
+java -jar target/leaderboard.jar create cloudspanner-leaderboard leaderboard
