@@ -1,3 +1,6 @@
+
+#index.js
+
 const {google} = require("googleapis");
 const {Storage} = require("@google-cloud/storage")
 
@@ -13,3 +16,14 @@ exports.csv2sheet = async (data, context) => {
 
   // TODO!
 };
+
+#package.json
+
+{
+    "name": "csv2sheet",
+    "version": "0.0.42",
+    "dependencies": {
+        "googleapis": "^51.0.0",
+        "@google-cloud/storage": "^5.0.1"
+    }
+}
