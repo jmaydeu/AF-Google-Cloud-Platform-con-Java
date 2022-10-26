@@ -3,9 +3,8 @@ requirements.txt
 # This file tells Python which modules it needs to import
 SQLAlchemy==1.3.12
 # If your database is MySQL, uncomment the following line:
-#PyMySQL==0.9.3
-# If your database is PostgreSQL, uncomment the following line:
-#pg8000==1.13.2
+PyMySQL==0.9.3
+
 
 main.py
 
@@ -17,21 +16,17 @@ import sqlalchemy
 # Feel free to change the insert statement as needed for your own table's requirements.
 
 # Uncomment and set the following variables depending on your specific instance and database:
-#connection_name = ""
-#table_name = ""
-#table_field = ""
-#table_field_value = ""
-#db_name = ""
-#db_user = ""
-#db_password = ""
+connection_name = ""
+table_name = ""
+table_field = ""
+table_field_value = ""
+db_name = ""
+db_user = ""
+db_password = ""
 
 # If your database is MySQL, uncomment the following two lines:
-#driver_name = 'mysql+pymysql'
-#query_string = dict({"unix_socket": "/cloudsql/{}".format(connection_name)})
-
-# If your database is PostgreSQL, uncomment the following two lines:
-#driver_name = 'postgres+pg8000'
-#query_string =  dict({"unix_sock": "/cloudsql/{}/.s.PGSQL.5432".format(connection_name)})
+driver_name = 'mysql+pymysql'
+query_string = dict({"unix_socket": "/cloudsql/{}".format(connection_name)})
 
 # If the type of your table_field value is a string, surround it with double quotes.
 
