@@ -1,0 +1,5 @@
+##configurar el servidor HTTP Apache2
+
+sudo apt-get update
+sudo apt-get install apache2 php7.0
+sudo service apache2 restart
