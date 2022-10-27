@@ -11,7 +11,7 @@ cd gae-standard-example
 
 ## iniciar la aplicacion spring boot con el complemento spring boot
 
-/mvnw -DskipTests spring-boot:run
+./mvnw -DskipTests spring-boot:run
 
 ##lanzar la aplicacion de springboot en app engine 
 
