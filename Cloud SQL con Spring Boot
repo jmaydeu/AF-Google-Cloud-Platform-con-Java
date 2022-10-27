@@ -45,3 +45,7 @@ spring.cloud.gcp.sql.instance-connection-name=YOUR_CLOUD_SQL_INSTANCE_CONNECTION
 
 # Initialize the database since the newly created Cloud SQL database has no tables. The following flag is for Spring Boot 2.5+.
 spring.sql.init.mode=always  
+
+##propierties 
+
+spring.profiles.active=mysql
