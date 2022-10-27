@@ -5,3 +5,12 @@ gcloud sql instances create my-instance
 gcloud sql databases create petclinic --instance my-instance
 
 gcloud sql instances describe my-instance | grep connectionName
+
+
+##app ejemplo
+
+git clone https://github.com/spring-projects/spring-petclinic
+
+cd spring-petclinic
+
+./mvnw spring-boot:run
