@@ -14,3 +14,5 @@ git clone https://github.com/spring-projects/spring-petclinic
 cd spring-petclinic
 
 ./mvnw spring-boot:run
+
+## dependencias pom.xml
