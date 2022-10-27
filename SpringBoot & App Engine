@@ -8,3 +8,11 @@ cd gae-standard-example
 
 ## repo de git donde esta nuestra app de springboot con app engine
  git clone https://github.com/GoogleCloudPlatform/java-docs-samples.git
+
+## iniciar la aplicacion spring boot con el complemento spring boot
+
+/mvnw -DskipTests spring-boot:run
+
+##lanzar la aplicacion de springboot en app engine 
+
+gcloud app deploy 
