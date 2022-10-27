@@ -6,4 +6,5 @@ curl https://start.spring.io/starter.tgz \
   -d baseDir=gae-standard-example | tar -xzvf -
 cd gae-standard-example
 
+## repo de git donde esta nuestra app de springboot con app engine
  git clone https://github.com/GoogleCloudPlatform/java-docs-samples.git
