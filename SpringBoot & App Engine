@@ -1,0 +1,7 @@
+## comandos para generar una nueva aplicación Spring Boot con Spring Initializr.
+
+curl https://start.spring.io/starter.tgz \
+  -d bootVersion=2.3.0.RELEASE \
+  -d dependencies=web \
+  -d baseDir=gae-standard-example | tar -xzvf -
+cd gae-standard-example
