@@ -40,3 +40,7 @@ kubectl scale deployment NOMBRE --replicas=3
 ##ACTUALIZAR IMAGEN 
 
 kubectl set image deployment/jorge2 jorge=gcr.io/bbva-it-noviembre-367414/jorge:v2
+
+## VOLVER A LA VERSION ANTERIOR
+
+kubectl rollout undo deployment/jorge2
