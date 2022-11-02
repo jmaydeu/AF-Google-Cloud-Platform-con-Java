@@ -32,3 +32,7 @@ kubectl create service loadbalancer NOMBRE --tcp=8080:8080
 ## ESCALAR GKE 
 
 kubectl scale deployment NOMBRE --replicas=3
+
+## ACTUALIZACION
+
+./mvnw -DskipTests com.google.cloud.tools:jib-maven-plugin:build -Dimage=gcr.io/$GOOGLE_CLOUD_PROJECT/$nombre:v2
