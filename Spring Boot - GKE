@@ -24,3 +24,7 @@ gcloud container clusters create NOMBRE --num-nodes 2 --machine-type n1-standard
 ## IMPLEMENTAR APLICACION EN GKE 
 
 kubectl create deployment NOMBRE --image=gcr.io/$GOOGLE_CLOUD_PROJECT/NOMBRE:v1
+
+## PERMITIR EL TRAFICO EXTERNO CREANDO UN SERVICIO DE KUBERNETES LOAD BALANCER
+
+kubectl create service loadbalancer NOMBRE --tcp=8080:8080
