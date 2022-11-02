@@ -6,3 +6,9 @@ cd gs-spring-boot/complete
 # EJECUTAR APP LOCALMENTE
 
 ./mvnw -DskipTests spring-boot:run
+
+# EMPAQUETAR LA APP COMO UN DOCKER CONTAINER
+
+./mvnw -DskipTests package
+
+./mvnw -DskipTests com.google.cloud.tools:jib-maven-plugin:build -Dimage=gcr.io/$GOOGLE_CLOUD_PROJECT/$nombre:v1
