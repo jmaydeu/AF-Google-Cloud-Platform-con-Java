@@ -28,3 +28,7 @@ kubectl create deployment NOMBRE --image=gcr.io/$GOOGLE_CLOUD_PROJECT/NOMBRE:v1
 ## PERMITIR EL TRAFICO EXTERNO CREANDO UN SERVICIO DE KUBERNETES LOAD BALANCER
 
 kubectl create service loadbalancer NOMBRE --tcp=8080:8080
+
+## ESCALAR GKE 
+
+kubectl scale deployment NOMBRE --replicas=3
