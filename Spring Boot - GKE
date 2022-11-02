@@ -23,4 +23,4 @@ gcloud container clusters create NOMBRE --num-nodes 2 --machine-type n1-standard
 
 ## IMPLEMENTAR APLICACION EN GKE 
 
-kubectl create deployment NOMBRE --image=gcr.io/$GOOGLE_CLOUD_PROJECT/hello-java:v1
+kubectl create deployment NOMBRE --image=gcr.io/$GOOGLE_CLOUD_PROJECT/NOMBRE:v1
