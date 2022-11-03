@@ -13,3 +13,28 @@ curl https://start.spring.io/starter.tgz -d dependencies=web,cloud-gcp-storage -
 cd spring-gcs
 ./mvnw spring-boot:run
 
+##GcsController.java
+
+package com.example.demo;
+
+import java.io.IOException;
+import java.nio.charset.Charset;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.io.Resource;
+import org.springframework.util.StreamUtils;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class GcsController {
+
+  @Value("gs://REPLACE_WITH_YOUR_BUCKET/my-file.txt")
+  private Resource gcsFile;
+
+  @GetMapping
+  public String readGcsFile() throws IOException {
+    return StreamUtils.copyToString(
+        gcsFile.getInputStream(),
+        Charset.defaultCharset());
+  }
+}
