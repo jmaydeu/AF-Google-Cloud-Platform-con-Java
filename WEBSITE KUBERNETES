@@ -5,3 +5,12 @@ gcloud container clusters create NOMBRE --num-nodes 3
 ## ESPECIFICAR REGION PARA TODOS LOS SERVICIOS 
 
 gcloud config set compute/zone us-central1-f
+
+## CLONAR REPOSITORIO Y EJECUTAR LA APP
+
+git clone https://github.com/googlecodelabs/monolith-to-microservices.git
+cd monolith-to-microservices
+./setup.sh
+
+cd monolith 
+npm start
