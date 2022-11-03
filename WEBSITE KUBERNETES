@@ -1,0 +1,3 @@
+##CREAR CLUSTER DE KUBERNETES
+
+gcloud container clusters create NOMBRE --num-nodes 3
