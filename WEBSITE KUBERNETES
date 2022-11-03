@@ -14,3 +14,8 @@ cd monolith-to-microservices
 
 cd monolith 
 npm start
+
+##CREAR IMAGEN DOCKER CON CLOUD BUILD 
+
+cd ~/monolith-to-microservices/monolith
+gcloud builds submit --tag gcr.io/bbva-it-noviembre-367414/monolith:1.0.0 .
