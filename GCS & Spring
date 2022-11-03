@@ -1,0 +1,7 @@
+## CREAR ARCHIVO GCS 
+
+echo "Hello" > my-file.txt
+
+gsutil makebucket gs://jorge234234124124
+
+gsutil copy my-file.txt gs://jorge234234124124
