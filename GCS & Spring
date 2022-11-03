@@ -5,3 +5,11 @@ echo "Hello" > my-file.txt
 gsutil makebucket gs://jorge234234124124
 
 gsutil copy my-file.txt gs://jorge234234124124
+
+##INICIALIZAR LA APP DE SPRING BOOT
+
+curl https://start.spring.io/starter.tgz -d dependencies=web,cloud-gcp-storage -d baseDir=spring-gcs | tar -xzvf -
+
+cd spring-gcs
+./mvnw spring-boot:run
+
