@@ -19,3 +19,7 @@ npm start
 
 cd ~/monolith-to-microservices/monolith
 gcloud builds submit --tag gcr.io/bbva-it-noviembre-367414/monolith:1.0.0 .
+
+## MONTAR APP EN GKE 
+
+kubectl create deployment monolith --image=gcr.io/bbva-it-noviembre-367414/monolith:1.0.0
